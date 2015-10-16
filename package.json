@@ -1,0 +1,17 @@
+{
+  "name": "jhss.request",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gexiaowei<gandxiaowei@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-ssh": "latest"
+  }
+}
