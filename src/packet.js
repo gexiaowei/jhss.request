@@ -159,6 +159,9 @@ Packet.prototype.decodeRow = function (fields) {
             case 'D':
                 row[name] = this.getDouble();
                 break;
+            case 'Y':
+                row[name] = this.getByte();
+                break;
             default:
                 console.log('未知类型:' + field.type);
                 break;
@@ -174,6 +177,11 @@ Packet.prototype.get = function (count) {
     }
     return temp;
 };
+
+Packet.prototype.getByte = function () {
+    return this.buff.shift();
+};
+
 
 Packet.prototype.getChar = function () {
     String.fromCharCode(this.buff.shift());
